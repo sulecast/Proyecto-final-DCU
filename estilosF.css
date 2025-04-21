@@ -1,0 +1,150 @@
+body {
+    background-image: url(imgG.jpg);
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    border-radius: 11.5px;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    top: 10px;
+}
+
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+form {
+    background: #fff;
+    padding: 25px 20px;
+    box-shadow: 0 0 6px #000c;
+    border-radius: 11.5px;
+    margin-top: 20px;
+}
+
+.form {
+    width: 400px;  
+    margin: auto; 
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+
+img {
+    display:block;
+    margin: auto;
+}
+
+input {
+    background: none;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none ;
+    border-bottom: 1px solid #000
+}
+
+input:focus {
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+label {
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 14px;
+    /*color*/
+
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100;
+}
+
+.barra::before { 
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, rgb(7, 104, 7),rgb(7, 104, 7));
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #f00;
+    padding-top: 20px;
+}
+
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(7, 104, 7);
+    border: none;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: perspective();
+}
+
+#access {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(7, 104, 7);
+    display: block;
+    width: 70%;
+    margin: auto;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+/*  ~   */
